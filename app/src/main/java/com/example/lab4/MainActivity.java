@@ -2,6 +2,7 @@ package com.example.lab4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,5 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchSecondLayout(View view) {
         Log.d(LOG_TAG,"Button Clicked!!");
+        Intent intent =new Intent(this, activity_second.class);
+        startActivity(intent);
     }
 }
